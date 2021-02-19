@@ -1,4 +1,4 @@
-.about {
+/* .about {
 
     background: red;
     height: 700px;
@@ -6,16 +6,58 @@
     text-align: justify;
     margin: auto;
 
-}
+} */
 
-.about p {
+/* .about p {
     font-size: 14px;
     color: white;
     padding: 10px 5px;
     line-height: 27px;
-}
+} */
 
-.about .about_child {
+/* .about .about_child {
     background: white;
     float: right;
+} */
+
+/* .bangla h3 {
+    color: green;
+    font-size: 20px;
+}
+
+.bangla span {
+    color: red;
+    font-size: 15px;
+} */
+
+.about,
+.bangla,
+.banner {
+
+    height: 200px;
+    width: 200px;
+    border: 2px solid #000;
+    background-color: orange;
+    margin: 10px;
+}
+
+.banner_two {
+    background-color: pink !important;
+    /* border-radius: 50%; */
+    border-radius: 10px;
+}
+
+.about p,
+.bangla p,
+.banner p {
+
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+
+}
+
+.about p {
+    color: red !important;
+    line-height: 26px;
 }
