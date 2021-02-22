@@ -60,4 +60,43 @@
 .about p {
     color: red !important;
     line-height: 26px;
+
+}
+
+/* 22 feb */
+.post,
+.post1,
+.post2 {
+    border: 1px soild #000;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.post {
+
+    background-color: yellow;
+    border-radius: 40%;
+    position: relative;
+    top: 320px;
+    z-index: 2;
+
+}
+
+.post1 {
+    background-color: red;
+    border-radius: 20%;
+    position: relative;
+    z-index: 1;
+
+}
+
+.post2 {
+    background-color: orange;
+    border-radius: 30%;
+    position: fixed;
+    text-align: right;
+    top: 20px;
 }
