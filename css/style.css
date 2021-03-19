@@ -1,216 +1,85 @@
-/* .about {
-
-    background: red;
-    height: 700px;
-    width: 500px;
-    text-align: justify;
-    margin: auto;
-
-} */
-
-/* .about p {
-    font-size: 14px;
-    color: white;
-    padding: 10px 5px;
-    line-height: 27px;
-} */
-
-/* .about .about_child {
-    background: white;
-    float: right;
-} */
-
-/* .bangla h3 {
-    color: green;
-    font-size: 20px;
-}
-
-.bangla span {
-    color: red;
-    font-size: 15px;
-} */
-
-/* .about,
-.bangla,
-.banner {
-
-    height: 200px;
-    width: 200px;
-    border: 2px solid #000;
-    background-color: orange;
-    margin: 10px;
-}
-
-.banner_two {
-    background-color: pink !important;
-    border-radius: 10px;
-}
-
-.about p,
-.bangla p,
-.banner p {
-
-    font-size: 14px;
-    color: #fff;
-    padding: 10px;
-
-}
-
-.about p {
-    color: red !important;
-    line-height: 26px;
-
-} */
-
-/* 22 feb */
-/* .post,
-.post1,
-.post2 {
-    border: 1px soild #000;
-    height: 300px;
-    width: 300px;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-}
-
-.post {
-
-    background-color: yellow;
-    border-radius: 40%;
-    position: relative;
-    top: 320px;
-    z-index: 2;
-
-}
-
-.post1 {
-    background-color: red;
-    border-radius: 20%;
-    position: relative;
-    z-index: 1;
-
-}
-
-.post2 {
-    background-color: orange;
-    border-radius: 30%;
-    position: fixed;
-    text-align: right;
-    top: 20px;
-} */
-
 *{
     margin: 0;
     padding: 0;
 }
-/* position part start */
-.mainparents{
-    height: 600px;
-    width: 700px;
-    background-color: #0B7CBB;
-    margin: auto;
-    position: relative;
+ul,li{
+    list-style-type: none;
 }
-.allabout{
-    height: 200px;
-    width: 200px;
-    float: left;
-    position: absolute;
-}
-.aboutone{
-    background-color: red;
-    top:0;
-    left: 0;
-    z-index: 99;
-}
-.abouttwo{
-    background: #bbb;
-    top: 100px;
-    left: 100px;
-}
-.aboutthree{
-    background-color: #ddd;
-    left: 100px;
-    border-radius: 50%;
-     z-index: 999;
-}
-/* banner part stareted */
-.banner{
-    background: url(../image/banner.jpg);
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center ;
-    position: relative;
-    background-origin: content-box;
-}
-.overlay{
-    position: absolute;
-   
-    content: '';
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgb(12 26 56 / 70%);
-
-}
-.overlay .overlay_about{
-    z-index: 1;
-    text-align: center;
-    /* justify-content: center; */
-    transform: translateY(100%);
-}
-.overlay_about h5{
-    color: #fff;
-}
-.overlay_about h4{
-    color: #fff;
-    margin-bottom: 30px;
-}
-.overlay_about a{
-    border: 1px solid #fff;
+a{
     text-decoration: none;
-    padding: 20px 20px;
-    color: #ddd;
-    font-size: 20px;
-    border-radius: 5px;
-     background-color: red;
-     box-shadow: 0px 4px 7px 0px rgb(38 204 133 / 36%);
-     transition:width 2s;
-     -moz-transition: all .5s;
-     width:100px;
-     height: 100px;
-    }
-    .overlay_about a:hover{
-       
-        width:300px;
-    }
-/* afetr and before */
-.after_before{
+}
+/* screen controller */
+.full_wrapper{
+    width: 100%;
+    background-color: #444;
+    height: 80px;
+}
+.wrapper{
+    width: 960px;
+    background-color: red;
+    height: 100%;
+    margin: auto;
+}
+/* menu part start */
+.menu ul li{
+    float: left;
     position: relative;
 }
-.after_before h2::before{
-    content: 'Design Zone';
-    height: 2px;
-    width: 100%;
-     color: orange;
+.menu ul li a{
+    color: #fff;
+    padding: 29px 25px;
+    display: block;
+    font-size: 15px;
+    font-family: cursive;
+    text-transform: uppercase;
+    border-right: 1px solid #000;
+    
 }
-.after_before h2::after{
-    content: '$$$';
-    color: red;
-    width: 5px;
-    height: 2px;
+.menu ul li a:hover{
+    background: #bd070e;
 }
- div{
-    width: 100px;
-    height: 100px;
-    transition:width 2s;
-    background-color: red;
+.menu ul li:last-child a{
+     border-right:0px;
+     
+}
+/* .menu ul li:nth-child(2) a{
+     border-right:0px;
+     color: #000;
+     font-size: 25px;
+}
+.menu ul li:first-child a{
+     border-right:0px;
+     color: #000;
+     font-size: 25px;
+} */
+.menu ul li ul{
+position: absolute;
+background-color: #000;
+width: 200px;
+margin-top: 40px;
+visibility: hidden;
+opacity: 0;
+-webkit-transition: .5s;
+-moz-transition: .5s;
+transition: .7s;
+
 
 }
-div:hover{
-    width: 300px;
+.menu ul li:hover > ul{
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.menu ul li ul li{
+    width: 100%;
+}
+.menu ul li ul li a{
+    font-size: 15px;
+    padding: 10px 25px;
+    border-right: 0;
+    border-bottom: 2px solid #444;
+}
+.menu ul li ul li ul{
+    left: 100%;
+    top: 0;
 }
