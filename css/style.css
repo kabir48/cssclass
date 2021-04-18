@@ -8,34 +8,22 @@ ul,li{
 a{
     text-decoration: none;
 }
-
+.clr{
+    clear: both;
+}
 h1,h2,h3,h4,h5,h6,p{
     font-family: 'Dancing Script', cursive;
     font-family: 'Roboto', sans-serif;
 }
 /* screen controller */
 .full_wrapper{
-    width: 100%;
     background-color: #444;
     height: 80px;
 }
 .wrapper{
     width: 960px;
-    background-color: white;
-    height: 100%;
     margin: auto;
 }
 .about_us{
-    background-color: #fff;
-    height: 60px;
-    width: 50px;
-
-    
+    width: 100px;
 }
-.about_us p{
-    
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-}
-
