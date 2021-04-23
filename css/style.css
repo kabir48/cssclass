@@ -11,19 +11,116 @@ a{
 .clr{
     clear: both;
 }
-h1,h2,h3,h4,h5,h6,p{
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Roboto', sans-serif;
+body{
+    font-family: 'Poppins', sans-serif;
 }
+    
 /* screen controller */
 .full_wrapper{
-    background-color: #444;
-    height: 80px;
+    width: 100%;
 }
 .wrapper{
     width: 960px;
     margin: auto;
 }
-.about_us{
-    width: 100px;
+/* header part start */
+.header{
+    background-color: #8B0000;
 }
+.header_left,
+.header_right{
+    float: left;
+    width: 50%;
+    color: #fff;
+    padding: 20px 0;
+}
+.header_right p{
+     color: orangered !important;
+}
+
+
+/* menu part start */
+.main_part{
+    background-color: #555;
+}
+.logo_part{
+    float: left;
+    width: 30%;
+}
+.logo_part a{
+    padding: 10px 0;
+    display: block;
+
+}
+.logo_part a img{
+    width: 50%;
+}
+.menu_part{
+    float: left;
+    width: 70%;
+}
+.menu_part ul{
+    float: right;
+}
+.menu_part ul li{
+    float: left;
+}
+.menu_part ul li a{
+    color: #fff;
+    padding: 56px 21px;
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* banner part start */
+.banner{
+    background-image: url(../image/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+.banner_text h3{
+    font-size: 25px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.banner_text p{
+    font-size: 13px;
+    color: #000;
+    font-weight: 300;
+    max-width: 500px;
+    margin: auto;
+    padding: 15px 0;
+    line-height: 24px;
+}
+.banner_text a{
+    color: #000;
+    border: 1px solid #000;
+    font-size: 16px;
+    padding: 10px 30px;
+    display: inline-block;
+    margin: 00 10px;
+    text-transform: capitalize;
+    margin-top: 30px;
+    transition: .5s;
+    border-radius: 5px;
+}
+.banner_text a:hover{
+ background-color: darkcyan;
+ border-color: darkcyan;
+}
+/* about part start */
+.about_part{
+    background: #f6f6f6;
+    text-align: center;
+
+}
+.about_inner{
+    width: 25%;
+    float: left;
+    margin-top: 60px;
+}
+
